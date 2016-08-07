@@ -18,11 +18,6 @@ target_include_directories(
 	${PROJECT_NAME} PUBLIC
 	${CMAKE_CURRENT_SOURCE_DIR}
 	)
+	
 target_link_libraries(${PROJECT_NAME} Arduino_${DEVICE_NAME})
 target_link_libraries(${PROJECT_NAME} Arduino_WIRE_${DEVICE_NAME})
-
-#target_link_libraries(${PROJECT_NAME} MySensors_DHT_${DEVICE_NAME})
-#target_link_libraries(${PROJECT_NAME} MySensors_DallasTemperature_${DEVICE_NAME})
-#target_link_libraries(${PROJECT_NAME} MySensors_OneWire_${DEVICE_NAME})
-#target_link_libraries(${PROJECT_NAME} MySensors_SI7021_${DEVICE_NAME})
-#target_link_libraries(${PROJECT_NAME} PinChangeInt_${DEVICE_NAME})
